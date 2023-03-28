@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MidClass = ({ facility, description, button, url, alt }) => {
   return (
@@ -12,12 +13,12 @@ const MidClass = ({ facility, description, button, url, alt }) => {
           </h4>
           <p className="text-white hidden lg:block">{description}</p>
           <div>
-            <a
+            <Link
               href="/"
               className="bg-white py-2 px-5 rounded-md group-hover:bg-primary group-hover:text-white transition ease-in-out duration-300 font-bold"
             >
               {button}
-            </a>
+            </Link>
           </div>
         </div>
         <Image src={url} fill alt={alt} />

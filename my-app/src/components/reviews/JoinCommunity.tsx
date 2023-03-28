@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const JoinCommunity = () => {
   return (
@@ -11,12 +12,12 @@ const JoinCommunity = () => {
         <p className="font-light text-sm lg:text-lg text-center">
           There Is No Better Time Than Now
         </p>
-        <a
+        <Link
           href="/"
           className="bg-[#67c15b] font-bold py-3 px-7 rounded-full lg:text-xl mt-5 hover:bg-black hover:text-[#67c15b] transition duration-300"
         >
           Join Online
-        </a>
+        </Link>
       </div>
       <div className="bg-black/50 absolute z-10 top-0 bottom-0 right-0 left-0" />
       <div className="grow relative">

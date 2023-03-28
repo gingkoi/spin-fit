@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const MidFirst = () => {
   return (
@@ -12,12 +13,12 @@ const MidFirst = () => {
           YOUR LIFE WITH ANYTIME FITNESS. VOTED BEST GYM EVERY YEAR
         </p>
         <div className="flex justify-center my-5">
-          <a
+          <Link
             href="/"
             className="text-center text-white bg-black py-4 px-10 rounded-md text-xl hover:bg-primary transition ease-in"
           >
             JOIN US
-          </a>
+          </Link>
         </div>
       </div>
     </div>
