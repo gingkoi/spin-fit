@@ -2,7 +2,19 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const MidClass = ({ facility, description, button, url, alt }) => {
+const MidClass = ({
+  facility,
+  description,
+  button,
+  url,
+  alt,
+}: {
+  facility: string;
+  description: string;
+  button: string;
+  url: string;
+  alt: string;
+}) => {
   return (
     <div className="relative w-full lg:h-[420px] h-[300px]">
       <div className="group">
