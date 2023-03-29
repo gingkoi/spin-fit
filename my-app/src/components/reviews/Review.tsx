@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Review = () => {
   return (
-    <div className="max-w-screen mx-auto py-20 px-5 bg-white">
+    <div className="max-w-screen mx-auto py-20 px-5 animated_bg">
       <div className="max-w-[1600px] mx-auto text-center font-poppin">
         <h4 className="text-3xl lg:text-5xl font-bold py-5">
           Read trusted reviews from our customers

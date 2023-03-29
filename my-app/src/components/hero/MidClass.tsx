@@ -33,7 +33,7 @@ const MidClass = ({
             </Link>
           </div>
         </div>
-        <Image src={url} fill alt={alt} />
+        <Image src={url} fill alt={alt} sizes="100vw" />
       </div>
     </div>
   );

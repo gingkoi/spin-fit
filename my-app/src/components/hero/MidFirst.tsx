@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MidFirst = () => {
   return (
-    <div className="max-w-screen lg:h-[480px] h-[350px] flex justify-center items-center px-5">
+    <div className="max-w-screen lg:h-[480px] h-[350px] flex justify-center items-center px-5 animated_bg">
       <div className="font-poppin font-black">
         <h3 className="text-center lg:text-6xl text-3xl">
           REINVENT <br />

@@ -14,11 +14,11 @@ const Navbar = () => {
   return (
     <div className="relative h-full">
       <div className="bg-black flex justify-between px-5 lg:justify-around py-5 items-center font-poppin gap-4">
-        <div className="font-alatsi text-text font-bold text-2xl">
+        <Link href="/" className="cursor-pointer">
           <Image src={logo} width={170} height={100} alt="anytime-fitness" />
-        </div>
+        </Link>
         <div className="hidden lg:flex space-x-5 text-md ml-[100px] text-white">
-          <Link href="/" className="font-semibold hover:text-primary">
+          <Link href="/benefits" className="font-semibold hover:text-primary">
             Benefits
           </Link>
           <Link href="/" className="font-semibold hover:text-primary">
@@ -39,7 +39,7 @@ const Navbar = () => {
             Guest Pass
           </Link>
           <Link
-            href="/"
+            href="/pricing"
             className="text-white bg-primary py-3 px-5 font-semibold rounded-lg hover:scale-105 ease-in transition"
           >
             Join online
@@ -70,7 +70,7 @@ const Navbar = () => {
             : "hidden "
         }`}
       >
-        <Link href="/" className="text-text font-semibold text-xl p-3">
+        <Link href="/benefits" className="text-text font-semibold text-xl p-3">
           Benefits
         </Link>
         <Link href="/" className="text-text font-semibold text-xl p-3">
@@ -83,7 +83,7 @@ const Navbar = () => {
           Trainers
         </Link>
         <Link
-          href="/"
+          href="/pricing"
           className="text-xl p-3 bg-primary text-white font-semibold"
         >
           Join Online

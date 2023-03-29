@@ -84,9 +84,15 @@ const Footer = () => {
                 <Link href="/" className="hover:text-primary">
                   Support
                 </Link>
-                <Link href="/" className="hover:text-primary">
-                  Live Chat
-                </Link>
+                <div className="w-auto relative">
+                  <span className="absolute flex h-2 w-2 lg:top-[-30%] top-[-30%] lg:left-[22%] left-[43%]">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                  </span>
+                  <Link href="/" className="hover:text-primary">
+                    Live Chat
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -98,25 +104,34 @@ const Footer = () => {
               Want us to email you with the latest news?
             </p>
             <input
-              type="text"
-              name=""
-              id=""
+              type="email"
               placeholder="Enter your email"
               className="rounded-full py-3 px-5 text-black focus:outline-primary focus:outline-2 focus:outline-offset-0 my-5 w-full"
             />
-            <button className="bg-primary text-white py-3 px-8 rounded-full font-medium hover:opacity-90">
+            <Link
+              href="/pricing"
+              className="bg-primary text-white py-3 px-8 rounded-full font-medium hover:opacity-90"
+            >
               Subscribe
-            </button>
+            </Link>
           </div>
         </div>
         <div className="bg-white h-[0.1rem] mt-14 mb-8" />
         <div className="flex flex-col lg:flex-row justify-between items-center space-y-5 lg:space-y-0">
           <p>Copyright © 2022. All rights reserved.</p>
           <div className="flex space-x-5">
-            <AiFillFacebook size={30} />
-            <AiFillInstagram size={30} />
-            <AiOutlineTwitter size={30} />
-            <AiFillGithub size={30} />
+            <Link href="/">
+              <AiFillFacebook size={30} className="cursor-pointer" />
+            </Link>
+            <Link href="/">
+              <AiFillInstagram size={30} className="cursor-pointer" />
+            </Link>
+            <Link href="/">
+              <AiOutlineTwitter size={30} className="cursor-pointer" />
+            </Link>
+            <Link href="/">
+              <AiFillGithub size={30} className="cursor-pointer" />
+            </Link>
           </div>
         </div>
       </div>

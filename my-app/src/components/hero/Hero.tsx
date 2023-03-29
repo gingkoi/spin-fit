@@ -48,6 +48,7 @@ const Hero = () => {
           alt="/"
           fill
           className="md:h-[800px]"
+          priority
         />
       </div>
     </div>

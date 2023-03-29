@@ -1,7 +1,15 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const ReviewCard = ({ title, description, name, stars = 3 }) => {
+const ReviewCard = ({
+  title,
+  description,
+  name,
+}: {
+  title: string;
+  description: string;
+  name: string;
+}) => {
   return (
     <div className="p-10 text-left space-y-5 rounded-md bg-black flex flex-col justify-between">
       <h5 className="text-white font-bold md:text-3xl">{title}</h5>
