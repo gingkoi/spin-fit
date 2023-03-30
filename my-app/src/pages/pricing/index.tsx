@@ -11,7 +11,7 @@ const pricing = () => {
       </div>
       <div className="grid lg:grid-cols-3 gap-10 my-5 px-5">
         <PricingCard data={data[0]} />
-        <div className="outline outline-black rounded-lg">
+        <div className="outline outline-black rounded-lg scale-105">
           <PricingCard data={data[1]} />
         </div>
         <PricingCard data={data[2]} />

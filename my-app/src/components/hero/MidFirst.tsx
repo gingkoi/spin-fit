@@ -14,7 +14,7 @@ const MidFirst = () => {
         </p>
         <div className="flex justify-center my-5">
           <Link
-            href="/"
+            href="/pricing"
             className="text-center text-white bg-black py-4 px-10 rounded-md text-xl hover:bg-primary transition ease-in"
           >
             JOIN US
