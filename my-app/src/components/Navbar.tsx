@@ -18,16 +18,16 @@ const Navbar = () => {
           <Image src={logo} width={170} height={100} alt="anytime-fitness" />
         </Link>
         <div className="hidden lg:flex space-x-5 text-md ml-[100px] text-white">
-          <Link href="benefits" className="font-semibold hover:text-primary">
+          <Link href="/benefits" className="font-semibold hover:text-primary">
             Benefits
           </Link>
           <Link href="/" className="font-semibold hover:text-primary">
             Class Schedule
           </Link>
-          <Link href="locations" className="font-semibold hover:text-primary">
+          <Link href="/locations" className="font-semibold hover:text-primary">
             Locations
           </Link>
-          <Link href="trainers" className="font-semibold hover:text-primary">
+          <Link href="/trainers" className="font-semibold hover:text-primary">
             Trainers
           </Link>
         </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
             Guest Pass
           </Link>
           <Link
-            href="pricing"
+            href="/pricing"
             className="text-white bg-primary py-3 px-5 font-semibold rounded-lg hover:scale-105 ease-in transition"
           >
             Join online
@@ -76,10 +76,13 @@ const Navbar = () => {
         <Link href="/" className="text-white font-semibold text-xl p-3">
           Class Schedule
         </Link>
-        <Link href="locations" className="text-white font-semibold text-xl p-3">
+        <Link
+          href="/locations"
+          className="text-white font-semibold text-xl p-3"
+        >
           Locations
         </Link>
-        <Link href="trainers" className="text-white font-semibold text-xl p-3">
+        <Link href="/trainers" className="text-white font-semibold text-xl p-3">
           Trainers
         </Link>
         <Link

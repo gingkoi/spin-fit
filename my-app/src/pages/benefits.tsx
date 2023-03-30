@@ -28,7 +28,7 @@ const BenefitsPage = () => {
             membership.
           </p>
           <Link
-            href="/"
+            href="/pricing"
             className="bg-black text-white py-3 px-10 text-lg rounded-md hover:bg-transparent hover:outline hover:outline-black hover:text-black transition ease-in hover:font-bold"
           >
             Join us

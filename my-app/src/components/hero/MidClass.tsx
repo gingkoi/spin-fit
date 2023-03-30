@@ -8,12 +8,14 @@ const MidClass = ({
   button,
   url,
   alt,
+  link,
 }: {
   facility: string;
   description: string;
   button: string;
   url: string;
   alt: string;
+  link: string;
 }) => {
   return (
     <div className="relative w-full lg:h-[420px] h-[300px]">
@@ -26,7 +28,7 @@ const MidClass = ({
           <p className="text-white hidden lg:block">{description}</p>
           <div>
             <Link
-              href="/"
+              href={`/${link}`}
               className="bg-white py-2 px-5 rounded-md group-hover:bg-primary group-hover:text-white transition ease-in-out duration-300 font-bold"
             >
               {button}

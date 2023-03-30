@@ -1,6 +1,6 @@
 import PricingCard from "@/components/pricing/PricingCard";
 import React from "react";
-import data from "../components/pricing/priceData";
+import data from "../../components/pricing/priceData";
 
 const pricing = () => {
   return (
