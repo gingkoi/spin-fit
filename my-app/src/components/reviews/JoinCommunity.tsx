@@ -13,7 +13,7 @@ const JoinCommunity = () => {
           There Is No Better Time Than Now
         </p>
         <Link
-          href="/"
+          href="pricing"
           className="bg-[#67c15b] font-bold py-3 px-7 rounded-full lg:text-xl mt-5 hover:bg-black hover:text-[#67c15b] transition duration-300"
         >
           Join Online

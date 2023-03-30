@@ -61,7 +61,7 @@ const Form = () => {
         <p className="font-bold text-4xl text-primary">619 475 4450</p>
         <p>282 Kevin Brook, Imogeneborough, CA 58517</p>
       </div>
-      <div className="p-10 bg-white shadow-xl rounded-md border-2">
+      <div className="p-10 bg-black shadow-xl rounded-md border-2">
         <form
           className="lg:grow grid grid-cols-2 gap-3 "
           onSubmit={handleSubmit}
@@ -69,38 +69,38 @@ const Form = () => {
           <input
             type="text"
             placeholder="Full name"
-            className="border p-3 col-span-2 rounded-md focus:outline-primary"
+            className="border p-3 col-span-2 focus:outline-primary"
             name="name"
             value={formValues.name}
             onChange={handleChange}
           />
-          <p className="grid col-span-2 text-sm text-red-600 font-light">
+          <p className="grid col-span-2 text-sm text-[#ff5347]">
             {formErrors.name}
           </p>
           <input
             type="email"
             placeholder="Email"
-            className="border p-3 rounded-md focus:outline-primary grid col-span-2 lg:col-span-1"
+            className="border p-3  focus:outline-primary grid col-span-2 lg:col-span-1"
             name="email"
             value={formValues.email}
             onChange={handleChange}
           />
-          <p className="lg:hidden text-sm text-red-600 font-light grid col-span-2">
+          <p className="lg:hidden text-sm text-[#ff5347] grid col-span-2">
             {formErrors.email}
           </p>
 
           <input
             type="text"
             placeholder="Phone number"
-            className="border p-3 rounded-md focus:outline-primary grid col-span-2 lg:col-span-1"
+            className="border p-3  focus:outline-primary grid col-span-2 lg:col-span-1"
             name="phoneNumber"
             value={formValues.phoneNumber}
             onChange={handleChange}
           />
-          <p className="hidden lg:block text-sm text-red-600 font-light">
+          <p className="hidden lg:block text-sm text-[#ff5347]">
             {formErrors.email}
           </p>
-          <p className="grid col-span-2 lg:col-span-1 text-sm text-red-600 font-light">
+          <p className="grid col-span-2 lg:col-span-1 text-sm text-[#ff5347]">
             {formErrors.phoneNumber}
           </p>
           <textarea
@@ -108,13 +108,13 @@ const Form = () => {
             id=""
             cols={30}
             rows={4}
-            className="lg:col-span-2 border rounded-md p-3 focus:outline-primary grid col-span-2"
+            className="lg:col-span-2 border  p-3 focus:outline-primary grid col-span-2"
             placeholder="Message"
           ></textarea>
           <input
             value="Send Enquiry"
             type="submit"
-            className="bg-black text-white py-3 rounded-md mt-5 font-medium hover:bg-primary transition ease-out cursor-pointer text-sm lg:text-base"
+            className="bg-white py-3  mt-5 font-medium hover:bg-primary hover:text-white transition ease-out cursor-pointer text-sm lg:text-base"
           />
           <div>
             <ToastContainer

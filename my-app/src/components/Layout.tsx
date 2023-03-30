@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children }: any) => {
   return (
-    <>
+    <div className="scroll-smooth font-poppin">
       <header>
         <Banner />
         <Navbar />
@@ -14,7 +14,7 @@ const Layout = ({ children }: any) => {
       <footer>
         <Footer />
       </footer>
-    </>
+    </div>
   );
 };
 
