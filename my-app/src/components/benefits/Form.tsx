@@ -10,7 +10,7 @@ const Form = () => {
     phoneNumber: "",
   };
   const [formValues, setFormValues] = useState(initialValues);
-  const [formErrors, setFormErrors] = useState({});
+  const [formErrors, setFormErrors]: any = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e: any) => {
