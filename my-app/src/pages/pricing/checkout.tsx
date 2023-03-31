@@ -22,9 +22,9 @@ const checkout = () => {
     zipcode: "",
     phoneNumber: "",
   };
-  const [formValues, setFormValues] = useState(initialValues);
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
+  const [formValues, setFormValues] = useState<any>(initialValues);
+  const [formErrors, setFormErrors] = useState<any>({});
+  const [isSubmit, setIsSubmit] = useState<boolean>(false);
 
   const handleChange = (e: any) => {
     const { name, value }: { name: string; value: string } = e.target;
@@ -88,19 +88,19 @@ const checkout = () => {
             Express checkout
           </h1>
           <div className="grid grid-cols-4 gap-5">
-            <div className="bg-white border rounded-xl py-5 px-3 flex flex-col lg:flex-row items-center cursor-pointer shadow-lg justify-center">
+            <div className="bg-white border rounded-xl py-5 px-3 flex flex-col lg:flex-row items-center cursor-pointer shadow-lg justify-center hover:scale-[110%] transition">
               <FcGoogle size={30} />
               <p className="text-xl">Pay</p>
             </div>
-            <div className="bg-black border rounded-xl py-5 px-3 flex flex-col lg:flex-row items-center cursor-pointer shadow-lg justify-center">
+            <div className="bg-black border rounded-xl py-5 px-3 flex flex-col lg:flex-row items-center cursor-pointer shadow-lg justify-center hover:scale-[110%] transition">
               <BsApple size={27} className="text-white" />
               <p className="text-xl text-white">Pay</p>
             </div>
-            <div className="bg-[#3298dd] border rounded-xl py-5 px-3 flex flex-col lg:flex-row items-center cursor-pointer shadow-lg justify-center">
+            <div className="bg-[#3298dd] border rounded-xl py-5 px-3 flex flex-col lg:flex-row items-center cursor-pointer shadow-lg justify-center hover:scale-[110%] transition">
               <AiFillAlipayCircle size={27} className="text-white" />
               <p className="text-xl text-white">Pay</p>
             </div>
-            <div className="bg-[#303b44] border rounded-xl py-5 px-3 flex flex-col lg:flex-row items-center cursor-pointer shadow-lg justify-center">
+            <div className="bg-[#303b44] border rounded-xl py-5 px-3 flex flex-col lg:flex-row items-center cursor-pointer shadow-lg justify-center hover:scale-[110%] transition">
               <AiFillAmazonCircle size={27} className="text-[#e69131]" />
               <p className="text-xl text-white">Pay</p>
             </div>
