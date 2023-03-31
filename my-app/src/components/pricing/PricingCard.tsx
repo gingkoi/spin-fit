@@ -2,7 +2,7 @@ import React from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 import Link from "next/link";
 
-const PricingCard = ({ data }: { data: any }) => {
+const PricingCard = ({ data, closeModal }: { data: any; closeModal: any }) => {
   return (
     <div className="bg-white p-8 rounded-lg space-y-7 border-2">
       <p className="font-bold text-3xl text-center">{data.membership}</p>
@@ -23,6 +23,7 @@ const PricingCard = ({ data }: { data: any }) => {
       ))}
       <div className="flex justify-center">
         <Link
+          onClick={() => closeModal(false)}
           href="/pricing/checkout"
           className="bg-black text-white font-bold py-3 px-10 rounded-lg hover:bg-primary text-lg transition ease-in-out hover:scale-105"
         >

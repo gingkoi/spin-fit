@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link href="/benefits" className="font-semibold hover:text-primary">
             Benefits
           </Link>
-          <Link href="/" className="font-semibold hover:text-primary">
+          <Link href="/classes" className="font-semibold hover:text-primary">
             Class Schedule
           </Link>
           <Link href="/locations" className="font-semibold hover:text-primary">
@@ -73,7 +73,7 @@ const Navbar = () => {
         <Link href="benefits" className="text-white font-semibold text-xl p-3">
           Benefits
         </Link>
-        <Link href="/" className="text-white font-semibold text-xl p-3">
+        <Link href="/classes" className="text-white font-semibold text-xl p-3">
           Class Schedule
         </Link>
         <Link
